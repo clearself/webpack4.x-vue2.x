@@ -1,4 +1,4 @@
-# webpack5.x+vue2.x+eslint
+# webpack4.x+vue2.x+eslint
 ### 兼容IE
 - main.js
 ```
