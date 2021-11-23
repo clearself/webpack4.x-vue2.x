@@ -155,10 +155,11 @@ module.exports = {
     productionSourceMap: false,
     outputDir: 'dist',
     devServer: {
-        host: 'localhost',
-        port: 3001,
+        host: '10.18.3.88',
+        port: 3000,
         https: false,
         hotOnly: false,
+        disableHostCheck: true,
         proxy: { // 设置代理
             '/api': {
                 target: 'http://10.10.109.162:17999/', // 需要代理的地址

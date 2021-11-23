@@ -9,7 +9,7 @@ import './assets/css/element-variables.scss'
 import 'element-ui/lib/theme-chalk/index.css'
 import VNSUI from 'vns-ui' // 引入组件库
 import 'vns-ui/packages/theme-default/lib/index.css'
-
+import '@/styles/theme.less'
 import store from './store/index.js'
 import Debounce from './assets/js/utils.js'
 
@@ -25,9 +25,8 @@ import filters from './assets/js/filters.js'
 import directives from './assets/js/directives.js' // 引入样式库
 
 Vue.use(VNSUI)
-
 Vue.use(Element)
-Element.Dialog.props.closeOnClickModal.default = false
+// Element.Dialog.props.closeOnClickModal.default = false
 Vue.component('Debounce', Debounce)
 Vue.use(PublicFun)
 // 过滤器统一处理加载

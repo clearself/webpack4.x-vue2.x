@@ -19,13 +19,18 @@ export default {
     name: 'Login',
     data() {
         return {
+            bar_no_data: true,
+            barData: [],
+            radar_no_data: true,
+            radarData: [],
             isShow: false
         }
     },
-    created() {
+    mounted() {
 
     },
     methods: {
+
         close(val) {
             this.isShow = val
         }
@@ -34,6 +39,9 @@ export default {
 </script>
 
 <style lang="scss">
+.box>div{
+    margin:0 10px;
+}
     .marb{
         margin-bottom: 20px;
     }
