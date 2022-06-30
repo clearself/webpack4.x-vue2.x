@@ -10,6 +10,7 @@
         <div class="marb">组件展示：</div>
         <div class="ub marb">
             <vs-button @click="isShow = true" type="primary">Drag拖拽框</vs-button>
+            <vs-button @click="toFast" type="primary">远程桌面</vs-button>
         </div>
         <vs-drag title="聊天管理" :drag-min-width="500" :drag-min-height="500" v-if="isShow" @close="close"><div>拖动边框可改变宽高</div></vs-drag>
     </div>
@@ -30,7 +31,9 @@ export default {
 
     },
     methods: {
-
+        toFast() {
+            this.$router.push('/screen_fast')
+        },
         close(val) {
             this.isShow = val
         }
